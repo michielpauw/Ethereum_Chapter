@@ -50,4 +50,6 @@ https://www.youtube.com/watch?v=pWGLtjG-F5c
 - See if you can Deploy the Smart Contract you just compiled. This will not actually deploy it to any (test) network, but it will give you a way of seeing how the contract will behave
 - Try to create your own Smart Contract. For an example of a token representing a currency, you can look here: https://github.com/CodeWithJoe2020/ERC20Token/blob/main/ERC20.sol (maybe create LionCoin?)
 - If you want to discover further, have a look at the following video: https://www.youtube.com/watch?v=GDq7r1n9zIU
--
+- For docs on Solidity: https://docs.soliditylang.org/en/v0.8.12/
+
+There are many examples of contract implementations. 
