@@ -30,6 +30,9 @@ Smart contracts that represent something tangible or intangible within the ecosy
 
 In general: fungible tokens are divisible and non-unique, whereas non-fungible tokens are unique and indivisable.
 
+### More on smart contracts
+https://www.youtube.com/watch?v=pWGLtjG-F5c
+
 ## Technology and Tools
 
 - Written using Go programming language
