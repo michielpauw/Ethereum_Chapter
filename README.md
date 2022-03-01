@@ -40,7 +40,7 @@ In general: fungible tokens are divisible and non-unique, whereas non-fungible t
 
 ## Hands on! Create your own Smart Contract
 
-- Go to remix.ethereum.org
+- Go to remix.ethereum.org (https://remix-ide.readthedocs.io/en/latest/)
 - Look around in the default workspace. There are already three contracts in the contracts directory. Have a look at these contracts, and see if you can compile one (right click -> compile)
 - If successfull, you will see a green check mark on the middle icon on the left. If not, have a look at what the error may be (often it's because you use the wrong compiler)
 - Click on the bottom icon of the three (Deploy & Run Transactions).
