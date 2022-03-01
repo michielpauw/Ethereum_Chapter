@@ -37,9 +37,8 @@ https://www.youtube.com/watch?v=pWGLtjG-F5c
 
 - Written using Go programming language
 - Geth is the command line tool for running an Ethereum node
-- Clef is a command line tool for signing transactions and user account management
-- Account: combination of account address, a public key, and a private key
 - Test Ethereum networks are available, but this week we will work locally
+- MetaMask is a popular wallet, but many alternatives available
 
 ## Hands on! Create your own Smart Contract
 
