@@ -52,3 +52,11 @@ https://www.youtube.com/watch?v=pWGLtjG-F5c
 - For docs on Solidity: https://docs.soliditylang.org/en/v0.8.12/
 
 There are many examples of contract implementations. 
+
+- Install Metamask from the Chrome App Store
+- Create an account
+- Click on the Metamask logo in your extensions, and click on the 'Ethereum Mainnet' in the top of the popup
+- Click on 'Show/hide test networks' and toggle to 'show', then connect to the 'Ropsten Test Network'
+- In Remix, after compiling your contract, click on the 'Deploy & Run Transactions' tab
+- For environment, choose 'Injected Web3', and connect with MetaMask (it will connect to the Ropsten test network, because that is what's being used by MetaMask at the moment)
+- And then it turns out I have insufficient funds
