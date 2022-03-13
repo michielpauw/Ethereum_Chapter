@@ -39,7 +39,7 @@ We will use Remix IDE to write, compile, and deploy Smart Contracts for Ethereum
 
 You just started the deployment of your first Smart Contract. Congratulations! In the console at the bottom of the Remix IDE, you can click on `view on etherscan`. Click this to see the status of the transaction. Most likely, most of the details are 'Pending', and there is not a lot of information that you get from this page. If you click on MetaMask, you also see the Contract Deployment, with a Pending status. From experience, the deployment can take between one and ten minutes, but the speed and price of a transaction depend on a number of things.
 
-Before we investigate this, it is good to know the basic Ether conversions that you will encounter: 1 ether = 10^9 gwei = 10^18 wei. To put that into a 'time perspective': on the Ropsten test network, it took me 30 hours to mine approximately 9 ether, and then in the following 15 hours I did not mine a single block. 9 ether should be enough for all of us for the remainder of this workshop, though.
+Before we investigate this, it is good to know the basic Ether conversions that you will encounter: 1 ether = 10^9 gwei = 10^18 wei. To put that into a 'time perspective': on the Ropsten test network, it took me 30 hours to mine approximately 9 ether, and then in the following 15 hours I did not mine a single block. 9 ether should be enough for all of us for the remainder of this workshop, though. You can find me here: https://ropsten.etherscan.io/address/0x194d354f8Ac6F72cC53879812dd3c9822233e48e#mine
 
 ### What are gas price, gas limit, and all those values?
 
@@ -65,5 +65,5 @@ For more on gas: https://ethereum.org/en/developers/docs/gas/
 
 - Click on the MetaMask extension and find your pending transaction
 - Click on 'Speed up'
-- You will be asked if you want to increase the gas price, i.e., increase the Priority Fee for the transaction
+- You will be asked if you want to increase the max gas fee (i.e., increase the Priority Fee for the transaction). By default, this will be the minimum of 10%, but again you can change this.
 - If you confirm, a new transaction will be started (the hash will change), and this transaction will (most likely) finish faster than the previous transaction.
