@@ -71,7 +71,7 @@ For more on gas: https://ethereum.org/en/developers/docs/gas/
 ## Hooray, the transaction succeeded!
 Great! After some time, your transaction has been processed and it has been included in a block. You can view details of the transaction by clicking on it in MetaMask. Even more details can be found when you click on `View on block explorer`. 
 
-![BeforeDeploy](./images/ContractDeploymentDetails.png)
+![ContractDeploymentDetails](./images/ContractDeploymentDetails.png)
 
 Some questions:
 - How much more gas did this transaction need, compared to a standard Ether transaction?
@@ -81,6 +81,26 @@ When you click on 'View on block explorer', you can find the block number on whi
 
 But then, let's have a look at our own brand new contract. In Block Explorer, click on the hash after 'To:'
 
-![BeforeDeploy](./images/BlockExplorer.png)
+![BlockExplorer](./images/BlockExplorer.png)
 
-Here you can see your contract!
+Here you can see your contract! Click on the 'Contract' tab to see more details.
+
+![Contract](./images/Contract.png)
+
+First, you can see the code that was deployed. If you click on 'Read Contract', you can see all the exposed Read methods in the contract, in the 'Write Contract' tab, you can see all the exposed Write methods in the contract. No surprise that we have one of each.  
+
+- Check that if you call the Read method, that the address that is returned, matches the address of your account in MetaMask.
+- Ask one of your colleagues for their Account Address
+- In 'Write Contract', click on 'Connect to Web3'. This should activate a MetaMask popup, and allow you to connect with your own address.
+- Enter the address of your colleague, and click on 'Write'. Again, you will be asked to confirm the transaction with MetaMask.
+- Make sure to increase the gas limit if you want the transaction to finish anytime soon. You can do this the same way as with the Contract Deployment!
+- Confirm the transaction.
+
+![WriteContract](./images/WriteContract.png)
+
+This transaction once again can take between one and ten minutes. When it has finished, you can check out the details again, to see that the amount of Gas Used, is much lower than when you first deployed the contract.  
+
+- Now try to change the owner back to your own account. If you get an error, do not continue with the transaction! 
+- What happens? Why does this happen?
+
+So MetaMask 'protects' you from performing a transaction that may fail.
