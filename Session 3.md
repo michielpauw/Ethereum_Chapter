@@ -104,3 +104,24 @@ This transaction once again can take between one and ten minutes. When it has fi
 - What happens? Why does this happen?
 
 So MetaMask 'protects' you from performing a transaction that may fail.
+
+## NFTs
+
+This Owner contract gives you a glimpse of what Smart Contracts are and how they work. After I give up ownership of the contract, the Blockchain guarantees that I don't have control over it anymore. Naturally, this is only a small example, but it may give a small impression of how the Smart Contracts can be used in more complex situations. Let's have a look at NFT, or Non-Fungible Tokens.  
+
+NFTs are tokens (i.e. something representing value), that are uniquely identifiable and cannot be split into smaller parts. NFT ledgers claim to provide a public certificate of authenticity or proof of ownership, but the legal rights conveyed by an NFT can be uncertain. NFTs do not restrict the sharing or copying of the underlying digital files, do not necessarily convey the copyright of the digital files, and do not prevent the creation of NFTs with identical associated files. (Wikipedia). Ethereum is the way to go for NFT development.  
+
+OpenSea is a marketplace for NFTs. Let's check out an NFT here:  
+
+https://opensea.io/assets/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/5307  
+
+Here you can check the Item Activity, and you can see that this NFT changed ownership quite recently for a whopping 80 Ether. If you click on a link, you'll be redirected to Etherscan (which is hopefully a bit more familiar to you now). You can look around for a bit.  
+
+If you click on Details, you can see the Contract Address, and the Token ID. Click on the Contract Address to, once again, be redirected to Etherscan. Here you can have a look at the Contract Source Code, to get an impression of how an NFT Contract can be implemented.  
+
+Contracts like the one for CryptoPunks influenced the introduction of the ERC-721 Standard, that describes what a Smart Contract for an NFT should implement. You can check out this standard (and other ones, like the ERC20 standard, used for 'fungible' tokens, like cryptocurrencies) here:  
+
+https://docs.openzeppelin.com/contracts/4.x/erc721    
+
+Let's check out an actual contract implementing this ERC-721 interface.
+
