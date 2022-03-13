@@ -51,7 +51,7 @@ As you know from previous sessions, every transaction requires computational eff
 - In order for a transaction to be eligible for inclusion in a block, at least the base fee must be paid. This fee is determined by how 'busy' the Blockchain network currently is, and it often is only a fraction of the total fee.
 - The priority fee (or tip) can be set by the user initiating the transaction, to incentivize miners to include the transaction in a block. Withouth this fee, it can take very long for a transaction to complete. This fee (often) makes up the main chunk of a transaction fee.
 - The Gas Limit denotes the max units of gas used for a transaction (a security mechanism to prevent high fees from a bug or error in a Smart Contract, for example). The difference between gas units used, and gas limit, are not charged.
-- Total cost of a transaction, therefore, becomes `gas units (max. gas limit) \* (base fee + tip)
+- Total cost of a transaction, or Total Gas Fee, therefore, becomes `gas units (max. gas limit) \* (base fee + tip)
 
 When you deployed, and changed 'Site Suggested' to 'Market', you changed the Max Gas Fee:
 
@@ -67,3 +67,20 @@ For more on gas: https://ethereum.org/en/developers/docs/gas/
 - Click on 'Speed up'
 - You will be asked if you want to increase the max gas fee (i.e., increase the Priority Fee for the transaction). By default, this will be the minimum of 10%, but again you can change this.
 - If you confirm, a new transaction will be started (the hash will change), and this transaction will (most likely) finish faster than the previous transaction.
+
+## Hooray, the transaction succeeded!
+Great! After some time, your transaction has been processed and it has been included in a block. You can view details of the transaction by clicking on it in MetaMask. Even more details can be found when you click on `View on block explorer`. 
+
+![BeforeDeploy](./images/ContractDeploymentDetails.png)
+
+Some questions:
+- How much more gas did this transaction need, compared to a standard Ether transaction?
+- Remember how the 'Total Gas Fee' was calculated? Check that this is (more or less) correct based on Gas Used, Base Fee, and Priority Fee. Don't forget the conversions!
+
+When you click on 'View on block explorer', you can find the block number on which the transaction has been registered. Here you can have an inside look into the block. As you can see: everything is out in the open, but anonymous: who has mined the block, what transactions are included in the block, how much every transaction cost... it can be interesting to have a look around!  
+
+But then, let's have a look at our own brand new contract. In Block Explorer, click on the hash after 'To:'
+
+![BeforeDeploy](./images/BlockExplorer.png)
+
+Here you can see your contract!
