@@ -1,3 +1,11 @@
+# Preparation Session 3
+
+- Follow the steps from this tutorial to install the MetaMask browser Extension, and to create a wallet: https://www.geeksforgeeks.org/how-to-install-and-use-metamask-on-google-chrome/ (if you use a different browser, you can download the extension here: https://metamask.io/download/). You can do this on your ING computer, as well as on your private computer, if you prefer.
+- You can now see an account (for example, 0xbC28c434aa54Cb0b3F1eA70cf02073DeB0E400DE, with most likely 0 ETH in it). Copy this account, and send it to me on Teams. I will make sure that you get some Test Ether (no real value, so sorry to disappoint)
+- With the extension open, you can see `Ethereum Mainnet` in the top of the Extension popup. Click on this, and in the dropdown menu that appears click on `Show/hide test networks` and toggle this control to On.
+- Now, in the same dropdown menu, click on `Ropsten Test Network`. This is the Ethereum test network that we will be using. After I have sent you some Test Ether, this should be visible in this window.
+- You are now all set for the third session on Blockchain!
+
 # Session 3
 
 ## Let's deploy some smart contracts!
