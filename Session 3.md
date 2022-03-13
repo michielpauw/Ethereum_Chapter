@@ -44,13 +44,14 @@ Before we investigate this, it is good to know the basic Ether conversions that 
 
 As you know from previous sessions, every transaction requires computational effort, and therefore every transaction requires a fee.
 
-- The fundamental unit of computation in Ethereum is called 'gas'. A standard Ether transaction requires 21.000 units of gas, a Smart Contract deployment may require much more.
+- The fundamental unit of computation in Ethereum is called 'gas'. A standard Ether transaction requires 21.000 units of gas, a Smart Contract deployment may require much more. In Ethereum Mainnet, a block has a target size of 15 million gas, but this varies with network demand.
 - For every unit of gas that is used in a transaction, a fee is paid, most often denoted in gwei
 - The gas fee per unit, is calculated as the `base fee + priority fee`
 - In order for a transaction to be eligible for inclusion in a block, at least the base fee must be paid. This fee is determined by how 'busy' the Blockchain network currently is, and it often is only a fraction of the total fee.
 - The priority fee (or tip) can be set by the user initiating the transaction, to incentivize miners to include the transaction in a block. Withouth this fee, it can take very long for a transaction to complete. This fee (often) makes up the main chunk of a transaction fee.
 - The Gas Limit denotes the max units of gas used for a transaction (a security mechanism to prevent high fees from a bug or error in a Smart Contract, for example). The difference between gas units used, and gas limit, are not charged.
 - Total cost of a transaction, therefore, becomes `gas units (max. gas limit) \* (base fee + tip)
+- For more on gas: https://ethereum.org/en/developers/docs/gas/
 
 ### My transaction is slow, now what?
 
