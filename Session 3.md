@@ -24,6 +24,7 @@ We will use Remix IDE to write, compile, and deploy Smart Contracts for Ethereum
 - Make sure there is no error message in the second tab on the left
 - In the third tab, you can deploy the contract
   - Choose `Environment: Injected Web 3`. A popup may come from MetaMask to confirm
+![BeforeDeploy](https://github.com/michielpauw/Ethereum_Chapter/blob/main/images/BeforeDeploy.png)
   - Make sure that the `Account` is set to an account that has some (test) ether available (make sure that your MetaMask is set to the Ropsten test network)
   - The `Gas Limit` and `Value` can be ignored for now
   - Make sure that the `Contract` is set to `Owner - contracts/2_Owner.sol`
