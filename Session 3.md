@@ -123,5 +123,35 @@ Contracts like the one for CryptoPunks influenced the introduction of the ERC-72
 
 https://docs.openzeppelin.com/contracts/4.x/erc721    
 
-Let's check out an actual contract implementing this ERC-721 interface.
+OpenZeppelin is a library for secure smart contracts, and can be used to very easily create them. By using their API, we can create a very simple smart contract with just a couple of lines of code:
 
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+
+contract LionIOU is ERC721URIStorage {
+    using Counters for Counters.Counter;
+    Counters.Counter private _tokenIds;
+
+    constructor() ERC721("LionIOU", "LIO") {}
+
+    function awardItem(address user, string memory message)
+        public
+        returns (uint256)
+    {
+        _tokenIds.increment();
+
+        uint256 newItemId = _tokenIds.current();
+        _mint(user, newItemId);
+        _setTokenURI(newItemId, message);
+
+        return newItemId;
+    }
+}
+```
+
+Since this is quite a large Smart Contract after compilation, I would recommend not deploying it yourself, to avoid running out of gas (it took me .2 test Ether). Instead, let's see what we can do with it!
