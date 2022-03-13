@@ -23,8 +23,8 @@ We will use Remix IDE to write, compile, and deploy Smart Contracts for Ethereum
 - You can compile the 2_Owner.sol contract by right clicking on the file and clicking `compile`
 - Make sure there is no error message in the second tab on the left
 - In the third tab, you can deploy the contract
-  - Choose `Environment: Injected Web 3`. A popup may come from MetaMask to confirm
 ![BeforeDeploy](./images/BeforeDeploy.png)
+  - Choose `Environment: Injected Web 3`. A popup may come from MetaMask to confirm
   - Make sure that the `Account` is set to an account that has some (test) ether available (make sure that your MetaMask is set to the Ropsten test network)
   - The `Gas Limit` and `Value` can be ignored for now
   - Make sure that the `Contract` is set to `Owner - contracts/2_Owner.sol`
@@ -52,7 +52,14 @@ As you know from previous sessions, every transaction requires computational eff
 - The priority fee (or tip) can be set by the user initiating the transaction, to incentivize miners to include the transaction in a block. Withouth this fee, it can take very long for a transaction to complete. This fee (often) makes up the main chunk of a transaction fee.
 - The Gas Limit denotes the max units of gas used for a transaction (a security mechanism to prevent high fees from a bug or error in a Smart Contract, for example). The difference between gas units used, and gas limit, are not charged.
 - Total cost of a transaction, therefore, becomes `gas units (max. gas limit) \* (base fee + tip)
-- For more on gas: https://ethereum.org/en/developers/docs/gas/
+
+When you deployed, and changed 'Site Suggested' to 'Market', you changed the Max Gas Fee:
+
+![BeforeDeploy](./images/MaxGasFee.png)
+
+This is the maximum amount of gas per unit that you are willing to pay. In general, this mainly determines the priority fee you are willing to pay, since the base fee is more stable in the test net.
+
+For more on gas: https://ethereum.org/en/developers/docs/gas/
 
 ### My transaction is slow, now what?
 
